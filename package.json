@@ -1,6 +1,6 @@
 {
   "name": "dsh-demo-plugin",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "A minimal DSH demo bundle plugin for understanding install/update flow",
   "type": "module",
   "main": "index.js",

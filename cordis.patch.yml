@@ -9,8 +9,8 @@
     - id: demo-plugin
       name: 'dsh-demo-plugin'
       config:
-        version: '2.0.0'
-        label: 'updated-v2'
+        version: '3.0.0'
+        label: 'updated-v3-from-git'
 
 # Uncomment the block below to also wire up the Claude Code hook bridge.
 # configPath resolves against the process launch cwd (NOT the plugin dir).
