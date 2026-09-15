@@ -22,4 +22,5 @@
     - id: hooks-claude-code
       name: '@deepseek-ai/dsh-hooks-claude-code'
       config:
-        configPath: C:/workspace/TEST/DSH/dsh-demo-plugin/hooks.json
+        configPath: !!js require('path').join(require('path').dirname(require.resolve('dsh-demo-plugin/package.json')), 'hooks.json')
+        pluginRoot: !!js require('path').dirname(require.resolve('dsh-demo-plugin/package.json'))
