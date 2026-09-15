@@ -1,0 +1,25 @@
+# dsh-demo-plugin bundle patch
+# This file is loaded by composeProfile() during DSH boot.
+# Each item is either:
+#   { id, config }          — override config of an existing plugin
+#   { id, disabled: true }  — disable an existing plugin
+#   { insert: [ ... ] }     — insert new plugin entries
+
+- insert:
+    - id: demo-plugin
+      name: 'dsh-demo-plugin'
+      config:
+        version: '2.0.0'
+        label: 'updated-v2'
+
+# Uncomment the block below to also wire up the Claude Code hook bridge.
+# configPath resolves against the process launch cwd (NOT the plugin dir).
+# To use it, start DSH from the directory containing this plugin, or use an absolute path.
+# NOTE: !!js expressions are supported in patch YAML, so you can also write:
+#   configPath: !!js require('path').join(require('path').dirname(require.resolve('dsh-demo-plugin/package.json')), 'hooks.json')
+
+- insert:
+    - id: hooks-claude-code
+      name: '@deepseek-ai/dsh-hooks-claude-code'
+      config:
+        configPath: C:/workspace/TEST/DSH/dsh-demo-plugin/hooks.json

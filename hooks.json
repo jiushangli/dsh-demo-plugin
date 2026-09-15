@@ -1,0 +1,27 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo '[demo-plugin hook] SessionStart fired — hooks.json bridge is working'",
+            "timeout": 5
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo \"[demo-plugin hook] PostToolUse: tool=$CLAUDE_PROJECT_DIR\"",
+            "timeout": 3
+          }
+        ]
+      }
+    ]
+  }
+}

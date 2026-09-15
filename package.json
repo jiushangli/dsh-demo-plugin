@@ -1,0 +1,23 @@
+{
+  "name": "dsh-demo-plugin",
+  "version": "2.0.0",
+  "description": "A minimal DSH demo bundle plugin for understanding install/update flow",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./hooks.json": "./hooks.json",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "hooks.json"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
