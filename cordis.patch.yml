@@ -1,13 +1,8 @@
 # dsh-demo-plugin bundle patch
-# This file is loaded by composeProfile() during DSH boot.
-# Each item is either:
-#   { id, config }          — override config of an existing plugin
-#   { id, disabled: true }  — disable an existing plugin
-#   { insert: [ ... ] }     — insert new plugin entries
 
 - insert:
     - id: demo-plugin
       name: 'dsh-demo-plugin'
       config:
-        version: '4.1.0'
-        label: 'updated-via-github'
+        version: '1.0.0'
+        label: 'session-logger'
