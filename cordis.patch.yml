@@ -9,5 +9,5 @@
     - id: demo-plugin
       name: 'dsh-demo-plugin'
       config:
-        version: '3.0.0'
-        label: 'installed-from-github'
+        version: '4.1.0'
+        label: 'updated-via-github'

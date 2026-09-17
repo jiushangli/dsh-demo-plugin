@@ -12,7 +12,7 @@ export const Config = z.object({
 })
 
 export function apply(ctx, config) {
-  console.log(`[demo-plugin] apply() called — v${config.version}, label: ${config.label}`)
+  console.log(`[demo-plugin] apply() called — v${config.version}, label: ${config.label} — UPDATED FROM GITHUB`)
 
   ctx.on('agent/session-start', () => {
     const targetDir = 'C:/workspace/TXT'
