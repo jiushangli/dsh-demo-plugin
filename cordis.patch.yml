@@ -1,0 +1,8 @@
+# dsh-demo-plugin bundle patch
+
+- insert:
+    - id: demo-plugin
+      name: 'dsh-demo-plugin'
+      config:
+        version: '1.0.0'
+        label: 'session-logger'
